@@ -1,0 +1,146 @@
+/*Base Styling*/
+* {
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  background-color: #f9f9f9;
+}
+
+h1 {
+  margin: 45px;
+  text-align: center;
+  display: inline-block;
+  font-size: 24px;
+}
+
+input {
+  border: 1px solid #dddddd;
+  padding: 10px;
+  border-radius: 5px;
+  width: 275px;
+}
+
+button {
+  border: solid 2.25px #dddddd;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #fff;
+  margin: 7px;
+}
+
+hr {
+  color: #dddddd;
+}
+
+/*Searchbar Styling*/
+.employee-search {
+  display: inline-block;
+  float: right;
+  margin: 45px;
+  text-align: center;
+}
+
+/*Directory Grid Styling*/
+.directory {
+  max-width: 1400px;
+  margin: 25px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(415px, 1fr));
+  grid-gap: 15px;
+}
+
+.employee-directory ul { list-style: none; }
+
+
+/*Individuals Grid Item Styling*/
+.employee-directory ul li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border: solid 2.25px #dddddd;
+  border-radius: 10px;
+  text-align: center;
+  background-color: #fff;
+}
+
+strong {
+  font-size: 20px;
+}
+
+/*Thumbnail Image Styling*/
+.employee-directory ul li a {
+  display: block;
+  align-self: flex-start;
+  padding: 15px;
+  padding-right: 20px
+  margin-right: 10px auto;
+  margin-bottom: 7px;
+}
+
+.employee-directory ul li p {
+  text-align: left;
+}
+
+.employee-directory ul li:hover {
+  opacity: 1.0;
+  border: solid 2.5px #b2b2b2;
+}
+
+.employee-directory ul li a img {
+  border-radius: 50%;
+}
+
+
+/*Modal Background Styling*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+/*Modal Content/Box*/
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    z-index: 2;
+    padding: 20px;
+    border: 1px solid #888;
+    border-radius: 15px;
+    width: 425px;
+    height: auto;
+    text-align: center;
+}
+
+.modal-content img {
+  border-radius: 50%;
+  justify-content: center;
+}
+
+/*Close Button*/
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
